@@ -1,0 +1,29 @@
+services:
+  database:
+    image: postgres:${DATABASE_TAG:-latest}
+    container_name: postgres_database
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    secrets:
+      - db_username
+      - db_password
+    environment:
+      POSTGRES_USER_FILE: /run/secrets/db_username
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./config:/etc/postgresql/config
+    command: >
+      postgres
+      -c config_file=/etc/postgresql/config/postgresql.conf
+
+volumes:
+  db-data:
+
+secrets:
+  db_username:
+    environment: "DB_USERNAME"
+  db_password:
+    environment: "DB_PASSWORD"

@@ -1,0 +1,72 @@
+# Compiled Python Bytecode
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+.eggs
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+__pycache__
+
+# Python3 pyvenv
+.env
+.venv
+env/
+venv/
+ENV/
+VENV/
+env.bak/
+venv.bak/
+pyvenv.cfg
+.Python
+include
+pip-delete-this-directory.txt
+pip-selfcheck.json
+ipython.1.gz
+nosetests.1
+.noseids
+
+# Installer logs
+pip-log.txt
+.swp
+
+# Unit test / coverage reports
+.coverage
+.tox
+coverage.xml
+nosetests.xml
+
+# py.test
+.cache/*
+.pytest_cache/*
+.pytest_config
+
+# Developer
+.idea
+.project
+.pydevproject
+
+# Logs
+logs
+pytestdebug.log
+
+# macOS system files
+.DS_Store
+
+# Other
+temp
+temp_*/
+node_modules
+
+# Exepctions
+!database/.env

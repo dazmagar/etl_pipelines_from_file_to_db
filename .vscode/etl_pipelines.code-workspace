@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/__pycache__/": true,
+            "**/.pytest_cache/": true,
+        },
+        "editor.inlineSuggest.showToolbar": "onHover",
+        "editor.quickSuggestions": {
+            "comments": false,
+            "strings": true,
+            "other": true
+        },
+    }
+}
