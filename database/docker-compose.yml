@@ -1,7 +1,7 @@
 services:
-  database:
+  db:
     image: postgres:${DATABASE_TAG:-latest}
-    container_name: postgres_database
+    container_name: postgres
     restart: unless-stopped
     ports:
       - "5432:5432"

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker compose -f ./database/docker-sompose.yml down
+docker compose -f ./database/docker-compose.yml down

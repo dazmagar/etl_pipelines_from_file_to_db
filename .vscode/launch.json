@@ -8,7 +8,7 @@
             "name": "Python: Pytest (venv)",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/venv/Scripts/py.test.exe",
+            "program": "${workspaceFolder}/venv/bin/pytest",
             "console": "integratedTerminal",
             "args": [
                 "-k=unit",
